@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Jogador")
 @NamedNativeQuery(
-		name = "jogador.findJogadoresDataConv",
+		name = "Jogador.findJogadoresDataConv",
 		query = "SELECT j.codigo, j.nomeJogador, j.sexo, j.altura,"
 				+ " CONVERT(CHAR(10), j.dt_nasc, 103) as dt_nasc, j.id_time,"
 				+ " t.Id, t.nome, t.cidade"
@@ -24,7 +24,7 @@ import javax.persistence.Table;
 		resultClass = Jogador.class)
 
 @NamedNativeQuery(
-		name = "jogador.findJogadorDataConv",
+		name = "Jogador.findJogadorDataConv",
 		query = "SELECT j.codigo, j.nomeJogador, j.sexo, j.altura,"
 				+ " CONVERT(CHAR(10), j.dt_nasc, 103) as dt_nasc, j.id_time,"
 				+ " t.Id, t.nome, t.cidade"

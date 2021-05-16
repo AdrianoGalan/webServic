@@ -1,6 +1,6 @@
 package br.com.adrianogalan.WebService.model.dto;
 
-import br.com.adrianogalan.WebService.model.entity.Times;
+
 
 public class JogadorDTO {
 

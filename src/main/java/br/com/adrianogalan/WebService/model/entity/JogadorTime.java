@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "JogadorTime")
 @NamedNativeQuery(
-		name = "jogadorTime.udfJogadorIdade",
+		name = "JogadorTime.udfJogadorIdade",
 		query = "SELECT codigo, nomeJogador, sexo, altura, dt_nasc, idade, id, nome, cidade"
 				+ " from fn_jogadoridade(?1) ",
 		resultClass = JogadorTime.class)
